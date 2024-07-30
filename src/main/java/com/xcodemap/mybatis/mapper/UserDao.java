@@ -16,7 +16,6 @@ public class UserDao {
         try (SqlSession session = sqlSessionFactory.openSession()) {
             UserMapper mapper = session.getMapper(UserMapper.class);
             User user = mapper.selectById(1);
-            System.out.println(user);
         }
     }
 }
