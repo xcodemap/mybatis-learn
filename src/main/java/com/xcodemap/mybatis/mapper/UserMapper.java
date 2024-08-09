@@ -1,5 +1,8 @@
 package com.xcodemap.mybatis.mapper;
 
+import java.util.List;
+import java.util.Map;
+
 public interface UserMapper {
-    User selectById(int id);
+    List<User> findUser(Map<String, Object> paras);
 }

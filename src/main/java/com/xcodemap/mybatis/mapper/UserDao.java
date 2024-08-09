@@ -6,6 +6,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class UserDao {
 
@@ -15,7 +18,10 @@ public class UserDao {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         try (SqlSession session = sqlSessionFactory.openSession()) {
             UserMapper mapper = session.getMapper(UserMapper.class);
-            User user = mapper.selectById(1);
+            Map<String, Object> params = new HashMap<>();
+            params.put("age", 101);
+            List<User> users = mapper.findUser(params);
+            System.out.println(users);
         }
     }
 }
