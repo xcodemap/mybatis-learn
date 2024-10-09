@@ -1,5 +1,5 @@
 <archetype>
-  <id>mybatis-learn</id>
+  <id>mybatis-learn-main</id>
   <sources>
     <source>src/main/java/App.java</source>
   </sources>

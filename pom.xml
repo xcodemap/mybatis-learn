@@ -3,7 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.xcodemap.learn</groupId>
   <artifactId>mybatis-learn</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>mybatis-learn-main</module>
+  </modules>
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
