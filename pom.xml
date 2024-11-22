@@ -7,10 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>mybatis-learn-main</module>
+    <module>agent-debug</module>
   </modules>
   <properties>
-    <maven.compiler.source>11</maven.compiler.source>
-    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
   </properties>
   <name>mybatis-learn</name>
   <url>http://maven.apache.org</url>
@@ -20,12 +21,17 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.32</version>
+      <version>5.1.47</version>
     </dependency>
     <dependency>
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis</artifactId>
-      <version>3.5.13</version>
+      <version>3.5.7</version>
+    </dependency>
+    <dependency>
+      <groupId>com.zaxxer</groupId>
+      <artifactId>HikariCP</artifactId>
+      <version>4.0.3</version>
     </dependency>
   </dependencies>
 </project>
