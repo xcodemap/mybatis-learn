@@ -45,7 +45,7 @@ public class PhantomReadUser {
             Map<String, Object> params = new HashMap<>();
             params.put("age", 101);
             List<User> users = mapper.findUser(params);
-            System.out.println(users);
+            System.out.printf("Size:%d %s\n", users.size(), users);
         }
     }
 }
